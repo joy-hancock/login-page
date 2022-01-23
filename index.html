@@ -229,6 +229,7 @@ NOTE: Feel free to include additional elements that you think would improve the 
     .modal button {
       color: indigo;
       width:100%;
+      text-decoration:underline;
     }
 
 /* Add Zoom Animation */
@@ -460,6 +461,7 @@ button.addEventListener("click", function() {
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        button.classList.remove("hide");
     }
 }
 
